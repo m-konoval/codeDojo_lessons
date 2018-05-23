@@ -40,7 +40,7 @@ jspm_packages
 .vscode
 
 # WebStorm settings
-.idea
+.idea/
 
 # JavaScript files
 app/**/*.js
