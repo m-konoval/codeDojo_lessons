@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
 
 const todos = [
-    'Task one',
-    'Second Task',
-    'End Task'
+    {
+        title: 'Task one',
+        completed: true
+    },
+    {
+        title: 'Second Task',
+        completed: false
+    },
+    {
+        title: 'End Task',
+        completed: false
+    }
 ];
 
 @Component({
@@ -15,4 +24,16 @@ const todos = [
 export class AppComponent {
     title = 'Angular 2Do';
     todos = todos;
+
+    toggle(item:any) {
+        item.completed = !item.completed;
+    }
+
+    delete(item:any) {
+        let index = this.todos.indexOf(item);
+
+        if (index > -1) {
+            this.todos.splice(index, 1);
+        }
+    }
 }
