@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 
-const todos = [
+interface ITodo {
+    title: string;
+    completed: boolean
+}
+
+const todos: ITodo[] = [
     {
         title: 'Task one',
         completed: true
@@ -22,14 +27,14 @@ const todos = [
     styleUrls: ['app.component.css']
 })
 export class AppComponent {
-    title = 'Angular 2Do';
-    todos = todos;
+    title: string = 'Angular 2Do';
+    todos: ITodo[] = todos;
 
-    toggle(item:any) {
+    toggle(item: ITodo) {
         item.completed = !item.completed;
     }
 
-    delete(item:any) {
+    delete(item: ITodo) {
         let index = this.todos.indexOf(item);
 
         if (index > -1) {

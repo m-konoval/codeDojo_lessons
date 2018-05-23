@@ -25,20 +25,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.componet.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="app.componet.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/angular2-intro/app/app.componet.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/angular2-intro/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+                <state relative-caret-position="80">
+                  <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -116,9 +107,9 @@
         <option value="$PROJECT_DIR$/angular2-intro/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular2-intro/styles.css" />
         <option value="$PROJECT_DIR$/angular2-intro/app/app.component.css" />
-        <option value="$PROJECT_DIR$/angular2-intro/app/app.componet.ts" />
         <option value="$PROJECT_DIR$/angular2-intro/app/app.component.html" />
         <option value="$PROJECT_DIR$/angular2-intro/.gitignore" />
+        <option value="$PROJECT_DIR$/angular2-intro/app/app.componet.ts" />
       </list>
     </option>
   </component>
@@ -339,13 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular2-intro/app/app.componet.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular2-intro/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -357,6 +341,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular2-intro/app/app.componet.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
