@@ -41,6 +41,7 @@ jspm_packages
 
 # WebStorm settings
 .idea/
+.idea/workspace.xml
 
 # JavaScript files
 app/**/*.js
