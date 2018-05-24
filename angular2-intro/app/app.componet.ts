@@ -1,24 +1,8 @@
+/* APP.COMPONENT */
 import { Component } from '@angular/core';
 
-interface ITodo {
-    title: string;
-    completed: boolean
-}
-
-const todos: ITodo[] = [
-    {
-        title: 'Task one',
-        completed: true
-    },
-    {
-        title: 'Second Task',
-        completed: false
-    },
-    {
-        title: 'End Task',
-        completed: false
-    }
-];
+import { Todo } from "./shared/todo";
+import {todos} from "./shared/data";
 
 @Component({
     moduleId: module.id,
@@ -28,17 +12,10 @@ const todos: ITodo[] = [
 })
 export class AppComponent {
     title: string = 'Angular 2Do';
-    todos: ITodo[] = todos;
+    todos: Todo[] = todos;
 
-    toggle(item: ITodo) {
-        item.completed = !item.completed;
-    }
-
-    delete(item: ITodo) {
-        let index = this.todos.indexOf(item);
-
-        if (index > -1) {
-            this.todos.splice(index, 1);
-        }
+    create (title: string) {
+        const todo = new Todo(title);
+        this.todos.push(todo);
     }
 }
