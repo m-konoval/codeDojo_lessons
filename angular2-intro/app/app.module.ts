@@ -1,20 +1,26 @@
 /* APP.MODULE */
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
 
 // Main Component
-import { AppComponent } from "./app.componet";
+import {AppComponent} from "./app.componet";
 
 // Components
-import { TodoFormComponent } from "./components/todo-form/todo-form.component";
-import { TodoListComponent } from "./components/todo-list/todo-list.component";
-import { TodoItemComponent } from "./components/todo-item/todo-item.component";
+import {TodoFormComponent} from "./components/todo-form/todo-form.component";
+import {TodoListComponent} from "./components/todo-list/todo-list.component";
+import {TodoItemComponent} from "./components/todo-item/todo-item.component";
 
-@NgModule ({
+// Services
+import {TodoService} from "./services/todo.service";
+
+
+@NgModule({
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        HttpModule
     ],
     declarations: [
         AppComponent,
@@ -22,7 +28,9 @@ import { TodoItemComponent } from "./components/todo-item/todo-item.component";
         TodoListComponent,
         TodoItemComponent
     ],
+    providers: [TodoService],
     bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule {
+}

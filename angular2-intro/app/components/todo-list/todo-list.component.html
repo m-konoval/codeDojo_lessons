@@ -3,6 +3,7 @@
 
     <todo-item *ngFor="let todo of todos"
                [todo]="todo"
+               (toggle)="toggle($event)"
                (delete)="delete(todo)">
     </todo-item>
 

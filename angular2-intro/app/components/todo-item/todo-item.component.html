@@ -1,7 +1,7 @@
 <div class="todo-item"
      [class.completed]="todo.completed">
     <button class="checkbox icon"
-            (click)="toggle()">
+            (click)="onToggle()">
         <i class="material-icons"
            [innerText]="todo.completed ? 'check_box' : 'check_box_outline_blank'"></i>
     </button>
